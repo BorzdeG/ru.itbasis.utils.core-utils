@@ -1,0 +1,34 @@
+# IDE: IntelliJ Idea
+**/.idea/artifacts/
+**/.idea/libraries/
+**/.idea/scopes/
+**/.idea/.name
+**/.idea/misc.xml
+**/.idea/compiler.xml
+**/.idea/modules.xml
+**/.idea/uiDesigner.xml
+**/.idea/workspace.xml
+**/.idea/vcs.xml
+**/.idea/copyright/
+**/.idea/inspectionProfiles/
+**/.idea/dataSources.ids
+**/.idea/dataSources.xml
+**/.idea/dictionaries/
+**/.idea/qaplug_*.xml
+**/.idea/checkstyle-idea.xml
+*.ipr
+*.iml
+*.iws
+
+#General
+**/target/
+*.log
+*.class
+*.jar
+
+# Unsorted
+**/.project
+**/.classpath
+**/.settings
+**/.checkstyle
+**/test/tmp_out/
