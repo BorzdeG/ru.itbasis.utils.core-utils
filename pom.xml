@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>oss-parent</artifactId>
+		<groupId>org.sonatype.oss</groupId>
+		<version>7</version>
+	</parent>
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>ru.itbasis.utils</groupId>
 	<artifactId>core-utils</artifactId>
-	<version>1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
+	<version>1.1-SNAPSHOT</version>
 	<description>core for libraries "ru.itbasis.utils"</description>
 	<url>https://github.com/BorzdeG/ru.itbasis.utils.core-utils</url>
+	<developers>
+		<developer>
+			<name>Victor Alenkov</name>
+			<email>Alenkov.Victor@gmail.com</email>
+		</developer>
+	</developers>
 	<licenses>
 		<license>
 			<name>GNU Lesser General Public License v3 (LGPLv3)</name>
@@ -16,38 +26,14 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-
-	<parent>
-		<artifactId>oss-parent</artifactId>
-		<groupId>org.sonatype.oss</groupId>
-		<version>7</version>
-	</parent>
-
-	<developers>
-		<developer>
-			<name>Victor Alenkov</name>
-			<email>Alenkov.Victor@gmail.com</email>
-		</developer>
-	</developers>
-
 	<scm>
 		<connection>scm:git:git@github.com:BorzdeG/ru.itbasis.utils.core-utils.git</connection>
 		<developerConnection>scm:git:git@github.com:BorzdeG/ru.itbasis.utils.core-utils.git</developerConnection>
-		<url>git@github.com:BorzdeG/ru.itbasis.utils.core-utils</url>
 		<tag>HEAD</tag>
+		<url>git@github.com:BorzdeG/ru.itbasis.utils.core-utils</url>
 	</scm>
-
 	<build>
 		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<encoding>${project.build.sourceEncoding}</encoding>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-				</configuration>
-			</plugin>
 			<plugin>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>2.12.1</version>
@@ -66,15 +52,13 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<artifactId>maven-source-plugin</artifactId>
-				<version>2.2.1</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
 			</plugin>
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -87,6 +71,17 @@
 						<configuration>
 							<additionalparam>-Xdoclint:none</additionalparam>
 						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.2.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
@@ -129,9 +124,6 @@
 				<plugins>
 					<plugin>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<configuration>
-							<passphrase>${gpg.passphrase}</passphrase>
-						</configuration>
 						<executions>
 							<execution>
 								<phase>verify</phase>
@@ -140,6 +132,9 @@
 								</goals>
 							</execution>
 						</executions>
+						<configuration>
+							<passphrase>${gpg.passphrase}</passphrase>
+						</configuration>
 					</plugin>
 				</plugins>
 			</build>
