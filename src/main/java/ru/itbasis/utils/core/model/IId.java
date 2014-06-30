@@ -5,5 +5,5 @@ public interface IId<Self> {
 
 	Long getId();
 
-	Self setId(Long id);
+	Self setId(final Long id);
 }

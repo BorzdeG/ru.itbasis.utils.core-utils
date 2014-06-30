@@ -5,5 +5,5 @@ public interface ITitle<Self> {
 
 	String getTitle();
 
-	Self setTitle(String title);
+	Self setTitle(final String title);
 }

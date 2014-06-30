@@ -5,6 +5,5 @@ public interface IParent<Self, Parent> {
 
 	Parent getParent();
 
-	Self setParent(Parent value);
-
+	Self setParent(final Parent value);
 }

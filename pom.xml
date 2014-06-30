@@ -46,7 +46,7 @@
 						<configuration>
 							<configLocation>${project.basedir}/checkstyle.xml</configLocation>
 							<encoding>${project.build.sourceEncoding}</encoding>
-							<excludes>**/ISelf.java</excludes>
+							<excludes>**/ISelf.java,**/ITreeParents.java</excludes>
 						</configuration>
 					</execution>
 				</executions>

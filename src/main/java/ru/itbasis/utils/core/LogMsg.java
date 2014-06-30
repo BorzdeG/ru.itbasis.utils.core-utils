@@ -17,5 +17,4 @@ public interface LogMsg {
 	String FOUND_ITEM  = "found item: {}";
 
 	String ID = "id: {}";
-
 }

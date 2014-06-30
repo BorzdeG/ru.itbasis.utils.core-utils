@@ -8,14 +8,14 @@ import java.util.List;
 public interface ITreeService<Category extends ITreeCategory, Item extends ITreeItem, Filter> {
 	List<Category> getRootCategoryAll();
 
-	List<Category> getRootCategoryAll(Filter filter);
+	List<Category> getRootCategoryAll(final Filter filter);
 
-	List<Category> getChildrenCategoryAll(Category parent);
+	List<Category> getChildrenCategoryAll(final Category parent);
 
-	List<Category> getChildrenCategoryAll(Category parent, Filter filter);
+	List<Category> getChildrenCategoryAll(final Category parent, final Filter filter);
 
-	Category getCategory(long id);
+	Category getCategory(final long id);
 
-	Item getItem(long id);
+	Item getItem(final long id);
 
 }
