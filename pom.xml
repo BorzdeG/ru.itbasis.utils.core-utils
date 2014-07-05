@@ -9,7 +9,7 @@
 	<groupId>ru.itbasis.utils</groupId>
 	<artifactId>core-utils</artifactId>
 	<packaging>jar</packaging>
-	<version>1.2</version>
+	<version>1.3-SNAPSHOT</version>
 	<description>core for libraries "ru.itbasis.utils"</description>
 	<url>https://github.com/BorzdeG/ru.itbasis.utils.core-utils</url>
 	<developers>
@@ -28,7 +28,7 @@
 	<scm>
 		<connection>scm:git:git@github.com:BorzdeG/ru.itbasis.utils.core-utils.git</connection>
 		<developerConnection>scm:git:git@github.com:BorzdeG/ru.itbasis.utils.core-utils.git</developerConnection>
-		<tag>core-utils-1.2</tag>
+		<tag>HEAD</tag>
 		<url>git@github.com:BorzdeG/ru.itbasis.utils.core-utils</url>
 	</scm>
 	<build>
