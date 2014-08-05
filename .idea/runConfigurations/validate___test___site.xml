@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="validate" type="MavenRunConfiguration" factoryName="Maven">
+  <configuration default="false" name="validate &amp; test &amp; site" type="MavenRunConfiguration" factoryName="Maven">
     <MavenSettings>
       <option name="myGeneralSettings" />
       <option name="myRunnerSettings" />
@@ -12,6 +12,8 @@
             <list>
               <option value="clean" />
               <option value="validate" />
+              <option value="test" />
+              <option value="site" />
             </list>
           </option>
           <option name="profilesMap">
