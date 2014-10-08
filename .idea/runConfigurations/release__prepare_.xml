@@ -15,7 +15,9 @@
             </list>
           </option>
           <option name="profilesMap">
-            <map />
+            <map>
+              <entry key="gpg-passphrase" value="true" />
+            </map>
           </option>
           <option name="resolveToWorkspace" value="false" />
           <option name="workingDirPath" value="$PROJECT_DIR$" />
